@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Plakumat's Blog</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/home.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		{% include "shared/header.html" %}
+
+			<h1>My Blogs</h1>
+
+			<div class="blog">
+				{% block content %}
+					{% for item in data %}
+						<a href="{{ item.link }}" class="blog__link">
+							<div class="blog__list">
+								<h2 class="blog__title">{{ item.attributes.title }}</h2>
+								<span class="blog__date">{{ item.attributes.date }}</span>
+								<p class="blog__description"> {{ item.attributes.description }} </p>
+							</div>
+						</a>
+					{% endfor %}
+				{% endblock %}
+
+				<h2>Contact Form</h2>
+
+				<form action="/form" method="post" class="blog__form">
+					<input type="text" placeholder="Name.." name="name" class="blog__form__input" value="" required>
+					<input type="text" placeholder="Surname.." name="surname" class="blog__form__input" value="" required>
+					<textarea name="message" class="blog__form__textarea"></textarea>
+					<button class="blog__form__button">Send</button>
+				</form>
+			</div>
+
+		{% include "shared/footer.html" %}
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "node-blog",
+  "version": "1.0.0",
+  "description": "This blog developed for learning nodejs, express etc.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Plakumat (github.com/Plakumat)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "front-matter": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "nodemon": "^2.0.1",
+    "nunjucks": "^3.2.0"
+  }
+}
