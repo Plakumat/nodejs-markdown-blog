@@ -28,3 +28,7 @@ You can create a simple blog with new .md file in your blog folder. NodeJS will 
 ## Front Matter
 Front matter section starts at the top of your markdown file which contains all attributes that your blog files can get.
 You can change blog layout, blog description, blog title etc. using with Front Matter. Also you can add new attributes for using with Node + Nunjucks.
+
+### Considering on few additional futures
+- Effective usage of html elements while converting processes on Front Matter and Showdown library,
+- Form responses should redirect to html page.
