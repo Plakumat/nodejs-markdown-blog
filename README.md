@@ -34,4 +34,4 @@ You can change blog layout, blog description, blog title etc. using with Front M
 - Form responses should redirect to html page.
 
 Preview:
-![app-image](https://github.com/Plakumat/nodejs-markdown/blob/master/blog-thumb.png)
+![app-image](https://github.com/Plakumat/nodejs-markdown-blog/blob/master/blog-thumb.png)
