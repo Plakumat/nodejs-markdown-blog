@@ -32,3 +32,6 @@ You can change blog layout, blog description, blog title etc. using with Front M
 ### Considering on few additional futures
 - Effective usage of html elements while converting processes on Front Matter and Showdown library,
 - Form responses should redirect to html page.
+
+Preview:
+![app-image](https://github.com/Plakumat/nodejs-markdown/blob/master/blog-thumb.png)
